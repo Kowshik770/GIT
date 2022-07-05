@@ -1,0 +1,121 @@
+*Git is a version control system.
+
+*Git helps you keep track of code changes.
+
+*Git is used to collaborate on code.
+* git version command is 
+	> git --version
+*What is Git?
+
+> Git is a popular version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.
+
+> It is used for:
+
+>Tracking code changes.
+
+>Tracking who made changes.
+
+>Coding collaboration.
+
+*Working with Git:
+>Initialize Git on a folder, making it a Repository.
+
+>Git now creates a hidden folder to keep track of changes in that folder.
+
+>When a file is changed, added or deleted, it is considered modified.
+
+>You select the modified files you want to Stage.
+
+>The Staged files are Committed, which prompts Git to store a permanent snapshot of the files.
+
+>Git allows you to see the full history of every commit..
+
+>You can revert back to any previous commit.
+
+>Git does not store a separate copy of every file in every commit, but keeps track of changes made in each commit!.
+
+*What is GitHub?
+
+>Git is not the same as GitHub.
+
+>GitHub makes tools that use Git.
+
+>GitHub is the largest host of source code in the world, and has been owned by Microsoft since 2018.
+
+Configure Git:
+
+>git config --global user.name "kowshik"
+
+>git config --global user.email "kowshk770@gmail.com"
+
+* Initialize Git command
+
+> git init
+
+* Git Staging Environment
+
+> Staged files are files that are ready to be committed to the repository you are working on. You will learn more about commit shortly.
+
+> Git add command
+
+> git add main.java
+
+> To add more than one file in git
+
+> git add --all
+
+* Git commit
+
+> Since we have finished our work, we are ready move from stage to commit for our repo.
+
+> Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point". It is a point in the project you can go back to if you find a bug, or want to make a change.
+
+>When we commit, we should always include a message.
+
+git commit -m "First release of Hello World!"
+
+* Working with Git Branches
+
+> Branches allow you to work on different parts of a project without impacting the main branch.
+
+> When the work is complete, a branch can be merged with the main project.
+
+> You can even switch between branches and work on different projects without them interfering with each other.
+
+> Branching in Git is very lightweight and fast!
+
+ >  git branch hello-world-images
+
+> checkout is the command used to check out a branch. Moving us from the current branch, to the one specified at the end of the command:
+
+> git checkout hello-world-images
+
+
+* Push Changes to GitHub
+
+> git push origin
+
+
+* Pull  from github
+
+> pull is a combination of 2 different commands:
+
+  >fetch
+  >merge
+>Let's take a closer look into how fetch, merge, and pull works.
+
+* Git Fetch
+
+> fetch gets all the change history of a tracked branch/repo.
+
+> git fetch origin
+
+> We are behind the origin/master by 1 commit. That should be the updated README.md, but lets double check by viewing the log:
+
+> git log origin/master
+
+* Use pull to update our local Git:
+
+> git pull origin.
+
+> git merge origin/master -> git merge command
